@@ -1,6 +1,6 @@
 # CMPUT466project
 
-this is a [cmput 466](https://apps.ualberta.ca/catalogue/archive/course/cmput/466/1820) trivial project, comparing different alogrithm for predicting the catelogy accuracy
+this is a [cmput 466](https://apps.ualberta.ca/catalogue/archive/course/cmput/466/1820)   the trivial project, comparing different algorithms for predicting the category accuracy
 
 report:[link](https://github.com/markmak233/CMPUT466project/blob/main/ProjectRport.pdf)
 
