@@ -46,8 +46,8 @@ def load_data(TrainFileName,TestFileName):
     # X ,t split
     X_train = train_df.drop(["income_class"], axis=1)
     t_train = train_df["income_class"]
-    X_test = train_df.drop(["income_class"], axis=1)
-    t_test = train_df["income_class"]
+    X_test = test_df.drop(["income_class"], axis=1)
+    t_test = test_df["income_class"]
 
     # one hot encode
     X_categorical = [var for var in X_train.columns if train_df[var].dtype=='O']

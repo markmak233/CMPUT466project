@@ -1,0 +1,223 @@
+Report
+
+Alogrithm Accuracy,time,name
+========================
+0.9998157361341441 1.786647081375122 Linear Regreesion             
+0.8683043329921528 61.625924825668335 RandomForest                  
+0.8567041965199591 6.5526978969573975 DecisionTree                  
+0.7956328897987035 1.9586431980133057 Logestic Regreesion           
+0.7952917093142272 5.189793109893799 BayesClassifier               
+0.12063141084699958 16.645551919937134 Weighted Quadratic Discriminant Analysis(baseline)
+
+
+
+Alogrithm: DecisionTree
+========================
+1   marital-status_2     0.39411393686346446
+2   education-num        0.21102740434173184
+3   capital-gain         0.19377919009370204
+4   capital-loss         0.06679564771223992
+5   age                  0.043457142714348584
+6   hours-per-week       0.03197536169537524
+7   occupation_2         0.011109451906686123
+8   fnlwgt               0.008018419938274029
+9   occupation_4         0.0053999779876490305
+10  workclass_2          0.005351167902838058
+
+
+
+Alogrithm: BayesClassifier
+========================
+1   capital-gain         0.12216694306246545
+2   capital-loss         0.08442970333517597
+3   age                  0.0023462932252318546
+4   hours-per-week       0.0019286284626251371
+5   education-num        0.0007493397211473463
+6   fnlwgt               0.0002948221853694477
+7   relationship_2       0.00015969535040845085
+8   marital-status_2     0.00014741109268472384
+9   marital-status_1     0.00013512683496099686
+10  sex_1                0.00012284257723726988
+
+
+
+Alogrithm: Random Forest
+========================
+1   capital-gain         0.12676760549476954
+2   age                  0.10129327633103223
+3   marital-status_2     0.089621196512706
+4   education-num        0.08476903910777046
+5   fnlwgt               0.07122194694607445
+6   hours-per-week       0.06701678248678207
+7   relationship_2       0.05989791473871562
+8   capital-loss         0.03821848634122152
+9   marital-status_1     0.032378314572060495
+10  occupation_2         0.024841735888315765
+
+
+
+Alogrithm: Logestic Regreesion
+========================
+1   capital-gain         109719.07343930624
+2   capital-loss         14829.63841907514
+3   fnlwgt               2975.946176300554
+4   age                  633.6102369942225
+5   hours-per-week       585.1646242774544
+6   education-num        177.45319075144457
+7   marital-status_2     48.94266763005843
+8   relationship_2       43.42606647398939
+9   marital-status_1     33.514702312138844
+10  sex_2                22.646346820808972
+
+
+
+Alogrithm: Linear Regreesion
+========================
+1   fnlwgt               1109.8036895700902
+2   capital-gain         377.2119757063647
+3   capital-loss         16.319348836001556
+4   age                  0.6274149964857478
+5   hours-per-week       0.5526449043342448
+6   education-num        0.17408403045685267
+7   marital-status_2     0.05480030573994533
+8   relationship_2       0.04877032838734869
+9   marital-status_1     0.04039914525575946
+10  sex_2                0.027769230769230775
+
+
+
+Alogrithm: Weighted Quadratic Discriminant Analysis(base line)
+========================
+1   education-num        0.7043547693630613
+2   marital-status_2     0.43676678336711505
+3   relationship_2       0.42696394570358087
+4   education_2          0.39237147595356553
+5   sex_1                0.3887721884405135
+6   sex_2                0.3887721884405135
+7   marital-status_1     0.38466924636078864
+8   workclass_3          0.3842638658559056
+9   relationship_1       0.3463669307782077
+10  education_6          0.3121307045021805
+
+catelogy reference:
+{'col': 'workclass', 'mapping':     workclass_1  workclass_2  workclass_3  workclass_4  workclass_5  workclass_6  workclass_7  workclass_8  workclass_9
+ 1            1            0            0            0            0            0            0            0            0
+ 2            0            1            0            0            0            0            0            0            0
+ 3            0            0            1            0            0            0            0            0            0
+ 4            0            0            0            1            0            0            0            0            0
+ 5            0            0            0            0            1            0            0            0            0
+ 6            0            0            0            0            0            1            0            0            0
+ 7            0            0            0            0            0            0            1            0            0
+ 8            0            0            0            0            0            0            0            1            0
+ 9            0            0            0            0            0            0            0            0            1
+-1            0            0            0            0            0            0            0            0            0
+-2            0            0            0            0            0            0            0            0            0}{'col': 'education', 'mapping':      education_1  education_2  education_3  education_4  education_5  education_6  education_7  education_8  education_9  education_10  education_11  education_12  education_13  education_14  education_15  education_16
+ 1             1            0            0            0            0            0            0            0            0             0             0             0             0             0             0             0
+ 2             0            1            0            0            0            0            0            0            0             0             0             0             0             0             0             0
+ 3             0            0            1            0            0            0            0            0            0             0             0             0             0             0             0             0
+ 4             0            0            0            1            0            0            0            0            0             0             0             0             0             0             0             0
+ 5             0            0            0            0            1            0            0            0            0             0             0             0             0             0             0             0
+ 6             0            0            0            0            0            1            0            0            0             0             0             0             0             0             0             0
+ 7             0            0            0            0            0            0            1            0            0             0             0             0             0             0             0             0
+ 8             0            0            0            0            0            0            0            1            0             0             0             0             0             0             0             0
+ 9             0            0            0            0            0            0            0            0            1             0             0             0             0             0             0             0
+ 10            0            0            0            0            0            0            0            0            0             1             0             0             0             0             0             0
+ 11            0            0            0            0            0            0            0            0            0             0             1             0             0             0             0             0
+ 12            0            0            0            0            0            0            0            0            0             0             0             1             0             0             0             0
+ 13            0            0            0            0            0            0            0            0            0             0             0             0             1             0             0             0
+ 14            0            0            0            0            0            0            0            0            0             0             0             0             0             1             0             0
+ 15            0            0            0            0            0            0            0            0            0             0             0             0             0             0             1             0
+ 16            0            0            0            0            0            0            0            0            0             0             0             0             0             0             0             1
+-1             0            0            0            0            0            0            0            0            0             0             0             0             0             0             0             0
+-2             0            0            0            0            0            0            0            0            0             0             0             0             0             0             0             0}{'col': 'marital-status', 'mapping':     marital-status_1  marital-status_2  marital-status_3  marital-status_4  marital-status_5  marital-status_6  marital-status_7
+ 1                 1                 0                 0                 0                 0                 0                 0
+ 2                 0                 1                 0                 0                 0                 0                 0
+ 3                 0                 0                 1                 0                 0                 0                 0
+ 4                 0                 0                 0                 1                 0                 0                 0
+ 5                 0                 0                 0                 0                 1                 0                 0
+ 6                 0                 0                 0                 0                 0                 1                 0
+ 7                 0                 0                 0                 0                 0                 0                 1
+-1                 0                 0                 0                 0                 0                 0                 0
+-2                 0                 0                 0                 0                 0                 0                 0}{'col': 'occupation', 'mapping':      occupation_1  occupation_2  occupation_3  occupation_4  occupation_5  occupation_6  occupation_7  occupation_8  occupation_9  occupation_10  occupation_11  occupation_12  occupation_13  occupation_14  occupation_15
+ 1              1             0             0             0             0             0             0             0             0              0              0              0              0              0              0
+ 2              0             1             0             0             0             0             0             0             0              0              0              0              0              0              0
+ 3              0             0             1             0             0             0             0             0             0              0              0              0              0              0              0
+ 4              0             0             0             1             0             0             0             0             0              0              0              0              0              0              0
+ 5              0             0             0             0             1             0             0             0             0              0              0              0              0              0              0
+ 6              0             0             0             0             0             1             0             0             0              0              0              0              0              0              0
+ 7              0             0             0             0             0             0             1             0             0              0              0              0              0              0              0
+ 8              0             0             0             0             0             0             0             1             0              0              0              0              0              0              0
+ 9              0             0             0             0             0             0             0             0             1              0              0              0              0              0              0
+ 10             0             0             0             0             0             0             0             0             0              1              0              0              0              0              0
+ 11             0             0             0             0             0             0             0             0             0              0              1              0              0              0              0
+ 12             0             0             0             0             0             0             0             0             0              0              0              1              0              0              0
+ 13             0             0             0             0             0             0             0             0             0              0              0              0              1              0              0
+ 14             0             0             0             0             0             0             0             0             0              0              0              0              0              1              0
+ 15             0             0             0             0             0             0             0             0             0              0              0              0              0              0              1
+-1              0             0             0             0             0             0             0             0             0              0              0              0              0              0              0
+-2              0             0             0             0             0             0             0             0             0              0              0              0              0              0              0}{'col': 'relationship', 'mapping':     relationship_1  relationship_2  relationship_3  relationship_4  relationship_5  relationship_6
+ 1               1               0               0               0               0               0
+ 2               0               1               0               0               0               0
+ 3               0               0               1               0               0               0
+ 4               0               0               0               1               0               0
+ 5               0               0               0               0               1               0
+ 6               0               0               0               0               0               1
+-1               0               0               0               0               0               0
+-2               0               0               0               0               0               0}{'col': 'race', 'mapping':     race_1  race_2  race_3  race_4  race_5
+ 1       1       0       0       0       0
+ 2       0       1       0       0       0
+ 3       0       0       1       0       0
+ 4       0       0       0       1       0
+ 5       0       0       0       0       1
+-1       0       0       0       0       0
+-2       0       0       0       0       0}{'col': 'sex', 'mapping':     sex_1  sex_2
+ 1      1      0
+ 2      0      1
+-1      0      0
+-2      0      0}{'col': 'native-country', 'mapping':      native-country_1  native-country_2  native-country_3  native-country_4  native-country_5  native-country_6  ...  native-country_37  native-country_38  native-country_39  native-country_40  native-country_41  native-country_42
+ 1                  1                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 2                  0                 1                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 3                  0                 0                 1                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 4                  0                 0                 0                 1                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 5                  0                 0                 0                 0                 1                 0  ...                  0                  0                  0                  0                  0                  0
+ 6                  0                 0                 0                 0                 0                 1  ...                  0                  0                  0                  0                  0                  0
+ 7                  0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 8                  0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 9                  0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 10                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 11                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 12                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 13                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 14                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 15                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 16                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 17                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 18                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 19                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 20                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 21                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 22                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 23                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 24                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 25                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 26                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 27                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 28                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 29                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 30                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 31                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 32                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 33                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 34                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 35                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 36                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+ 37                 0                 0                 0                 0                 0                 0  ...                  1                  0                  0                  0                  0                  0
+ 38                 0                 0                 0                 0                 0                 0  ...                  0                  1                  0                  0                  0                  0
+ 39                 0                 0                 0                 0                 0                 0  ...                  0                  0                  1                  0                  0                  0
+ 40                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  1                  0                  0
+ 41                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  1                  0
+ 42                 0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  1
+-1                  0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+-2                  0                 0                 0                 0                 0                 0  ...                  0                  0                  0                  0                  0                  0
+
+[44 rows x 42 columns]}
