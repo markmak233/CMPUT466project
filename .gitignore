@@ -1,3 +1,5 @@
 
 *.txt
 *.pyc
+code/adult.data.csv
+code/adult.test.csv
